@@ -20,8 +20,6 @@ export async function loader({ params }: LoaderFunctionArgs) {
     }
     return product;
   }
-
-  return {};
 }
 
 export async function action({ request, params }: ActionFunctionArgs) {
