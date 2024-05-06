@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 import ErrorMessage from "../components/ErrorMessage";
 import { getProductById, updateProduct } from "../service/ProductService";
-import Product from "../../../api/src/models/Product.model";
 import ProductForm from "../components/ProductForm";
+import { Product } from "../types";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   if (params.id !== undefined) {
